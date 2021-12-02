@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "darbia_fedex",
+    "darbia_shipping",
+    "darbia_ups",
+    "darbia_usps"
+]

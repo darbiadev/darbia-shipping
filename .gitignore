@@ -1,0 +1,9 @@
+# IDE
+.idea
+
+# Build
+/target
+Cargo.lock
+
+# Docs
+docs/build
