@@ -7,8 +7,8 @@ const API_URL: &str = "https://onlinetools.ups.com/";
 
 // Build the URL for all calls
 async fn build<T>(url: String) -> Result<T, StatusCode>
-    where
-        T: DeserializeOwned,
+where
+    T: DeserializeOwned,
 {
     let response = reqwest::get(url).await;
 
@@ -41,13 +41,12 @@ async fn build<T>(url: String) -> Result<T, StatusCode>
 
 // Make call without parameters nor filters
 pub async fn call<T>(call: &str) -> Result<T, StatusCode>
-    where
-        T: DeserializeOwned,
+where
+    T: DeserializeOwned,
 {
     let url = format!("{}/{}", API_URL, call);
     build(url).await
 }
-
 
 #[cfg(test)]
 mod tests {
