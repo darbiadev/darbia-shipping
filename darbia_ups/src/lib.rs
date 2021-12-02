@@ -27,7 +27,7 @@ where
         }
     }
 
-    // Parse the response body as Json
+    // Parse the response body as JSON
     let content = response.unwrap().json::<T>().await;
 
     match content {
