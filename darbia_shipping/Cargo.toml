@@ -6,3 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+darbia_fedex = { path = "../darbia_fedex" }
+darbia_ups = { path = "../darbia_ups" }
+darbia_usps = { path = "../darbia_usps" }
