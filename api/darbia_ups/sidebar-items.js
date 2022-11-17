@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["call",""]]});
+window.SIDEBAR_ITEMS = {"fn":[["call",""]]};
